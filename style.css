@@ -41,14 +41,12 @@ nav {
   background: red;
 }
 
-ul {
-  background: pink;
-}
-/* Vi kan ändra list-style-position för att flytta list-prickarna. Ta bort kommentaren
-på rad 50 och se vad som ändras */
+/* Vi kan ändra list-style-position för att flytta list-prickarna. Ta bort nedanstående kommentar
+ och se vad som ändras */
 ul li {
   /* list-style-position: inside; */
   text-align: center;
+  background: pink;
 }
 
 a {
