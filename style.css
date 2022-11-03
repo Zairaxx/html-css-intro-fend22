@@ -8,36 +8,46 @@ body {
   background: lightcyan;
 }
 
-body h1 {
-  color: hsla(240, 49%, 53%, 1);
-  /* red:0-255 green:0-255 blue:0-255 */
-  color: rgba(76, 76, 194, 1);
-  color: #4c4cc2;
-  font-size: 48px;
-}
-
+/* Denna styling kommer att skrivas över pga vi ger nya CSS-regler nedan i rad 17 */
 h1 {
   color: red;
   font-size: 96px;
 }
 
+h1 {
+  font-size: 48px;
+  /* Tre olika sätt att sätta samma färg - Hex, RGB, HSL */
+
+  /* Hue: 0-360, Saturation:0-100%, Lightning:0-100%, Alpha (Opacity): 0-1 */
+  color: hsla(240, 49%, 53%, 1);
+  /* red:0-255 green:0-255 blue:0-255, alpha(opacity):0-1 */
+  color: rgba(76, 76, 194, 1);
+  /* Hex: 6 siffror - 2 första är R, 2 i mitten är G, 2 sista är B */
+  color: #4c4cc2;
+}
+
 select {
   width: 100px;
   border: 2px double rgb(0, 0, 0);
-  /* border-width: 4px;
-  border-style: solid;
-  border-color: #00ff00; */
+  /* Är en shorthand för nedanstående: */
+  border-width: 2px;
+  border-style: double;
+  border-color: rbg(0, 0, 0);
 }
 
+/*Vi kommer ej att se denna röda färg, pga vår ul täcker hela vår nav-tagg. Testa ta bort färgen backgrundfärgen
+ från ul-taggen */
 nav {
   background: red;
 }
+
 ul {
   background: pink;
 }
-
+/* Vi kan ändra list-style-position för att flytta list-prickarna. Ta bort kommentaren
+på rad 50 och se vad som ändras */
 ul li {
-  list-style-position: outside;
+  /* list-style-position: inside; */
   text-align: center;
 }
 
