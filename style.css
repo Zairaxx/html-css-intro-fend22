@@ -1,0 +1,56 @@
+/* 
+css selector {
+    css property:value
+}
+*/
+
+body {
+  background: lightcyan;
+}
+
+body h1 {
+  color: hsla(240, 49%, 53%, 1);
+  /* red:0-255 green:0-255 blue:0-255 */
+  color: rgba(76, 76, 194, 1);
+  color: #4c4cc2;
+  font-size: 48px;
+}
+
+h1 {
+  color: red;
+  font-size: 96px;
+}
+
+select {
+  width: 100px;
+  border: 2px double rgb(0, 0, 0);
+  /* border-width: 4px;
+  border-style: solid;
+  border-color: #00ff00; */
+}
+
+nav {
+  background: red;
+}
+ul {
+  background: pink;
+}
+
+ul li {
+  list-style-position: outside;
+  text-align: center;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover article {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+h2,
+h3 {
+  color: #000;
+}
